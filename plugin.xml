@@ -61,6 +61,11 @@
                 android:name="tl.cordova.plugin.firebase.mlkit.barcode.scanner.BarcodeCaptureActivity"
                 android:theme="@style/Theme.AppCompat.Light" />
         </config-file>
+        <config-file target="config.xml" parent="/*">
+          <preference name="AndroidXEnabled" value="true" />
+          <preference name="GradlePluginGoogleServicesEnabled" value="true" />
+          <preference name="GradlePluginGoogleServicesVersion" value="4.3.15" />
+        </config-file>
 
         <config-file parent="/*" target="AndroidManifest.xml">
             <uses-permission android:name="android.permission.CAMERA" />
